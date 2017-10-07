@@ -39,9 +39,9 @@ public class Jet {
 		builder.append("(model=");
 		builder.append(model);
 		builder.append(", speed=");
-		builder.append(speed);
+		builder.append(speed + " mph");
 		builder.append(", range=");
-		builder.append(range);
+		builder.append(range + " miles");
 		builder.append(", price= $");
 		builder.append(price);
 		builder.append(")");

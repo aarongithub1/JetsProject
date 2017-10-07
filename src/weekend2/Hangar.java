@@ -1,7 +1,5 @@
 package weekend2;
 
-//import java.util.Arrays;
-
 public class Hangar {
 	private Jet[] jetsArray;
 
@@ -57,7 +55,6 @@ public class Hangar {
 			}
 		}
 		return fastest;
-//		System.out.println("\nThe fastest jet is goes: " + fastest + " mph.\n");
 	}
 
 	public Jet longestRange() {
@@ -72,42 +69,5 @@ public class Hangar {
 			}
 		}
 		return longest;
-//		System.out.println("\nThe fastest jet is goes: " + fastest + " mph.\n");
 	}
 }
-
-
-/*
- * public static SpaceCraft farthestCraft() { 
- * 		SpaceCraft farthest = crafts[0];
- * 			for (SpaceCraft spaceCraft : crafts) { 
- * if (spaceCraft != null) { // iterate over spaceship array.
- * 		if (spaceCraft.range > farthest.range) { 
- * 			farthest = spaceCraft; // find farthest spaceship to return 
- * 			} 
- * 		} 
- * } 
- * return farthest; }
- * 
- * public boolean addAnimal(Animal a) { boolean added = false; for (int i = 0; i
- * < animals.length; i++) { if (animals[i] == null) { animals[i] = a; added =
- * true; break; } } return added; }
- * 
- * public void listAnimals() {
- * System.out.println("== Animals in this sanctuary =="); for (Animal animal :
- * animals) { if (animal != null ) { System.out.println(animal); } } }
- * 
- * public void fastestJet() {
-		int fastest = jetsArray[0].getSpeed();
-		for (int i = 0; i < jetsArray.length; i++) {
-			if (jetsArray[i] != null) {
-				if (jetsArray[i].getSpeed() > fastest) {
-					fastest = jetsArray[i].getSpeed();
-				}
-				
-			}
-		}
-		System.out.println("\nThe fastest jet is goes: " + fastest + " mph.\n");
-	}
- * 
- */

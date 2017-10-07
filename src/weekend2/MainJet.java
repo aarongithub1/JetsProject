@@ -42,7 +42,7 @@ public class MainJet {
 				System.out.print("\n");
 				System.out.print("Enter the Model of jet: ");
 				model = kb.next();
-				System.out.print("Enter the Speed of jet: ");
+				System.out.print("Enter the Speed of jet (mph): ");
 				speed = kb.nextInt();
 				System.out.print("Enter the Range of jet: ");
 				range = kb.nextInt();
