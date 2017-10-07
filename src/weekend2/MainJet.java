@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class MainJet {
 	static Scanner kb = new Scanner(System.in);
 	static Hangar h = new Hangar();
-
+//	static Jet j = new Jet();
+	private static Jet[] jetsArray;
+	
 	public static void main(String[] args) {
 		menu();
 	}
@@ -24,21 +26,31 @@ public class MainJet {
 		
 		switch (menuOption) {
 			case 1:
-//				h.getJetsArray();
 				h.printAllJets();
-//			System.out.println("Adding");
 			break;
 			case 2:
-//			System.out.println("Deleting");
 			break;
 			case 3:
-//			System.out.println("Quitting");
 			break;
 			case 4:
-//			System.out.println("Invalid selection");
+				String model;
+				int speed;
+				int range;
+				double price;
+				System.out.print("Enter the Model of jet: ");
+				model = kb.next();
+				System.out.print("Enter the Speed of jet: ");
+				speed = kb.nextInt();
+				System.out.print("Enter the Range of jet: ");
+				range = kb.nextInt();
+				System.out.print("Enter the Price of jet: ");
+				price = kb.nextDouble();
+				
+				Jet jet = new Jet(model, speed, range, price);
+				h.addJetToArray(jet);
+				
 			break;
 			case 5:
-//			System.out.println("Invalid selection");
 				break;
 			}
 		} while (menuOption != 5);
