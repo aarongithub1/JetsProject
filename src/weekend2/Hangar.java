@@ -20,30 +20,74 @@ public class Hangar {
 	}
 
 	public void printAllJets() {
+		System.out.println("");
+		
 		for (int i = 0; i < jetsArray.length; i++) {
 			if (jetsArray[i] != null) {
 				System.out.println(jetsArray[i]);
 			}
 		}
+		System.out.println("");
 
 	}
-	
-	// 
-	public boolean addJetToArray(Jet jet) {
-	      boolean added = false;
-	      for (int i = 0; i < jetsArray.length; i++) {
-	      if (jetsArray[i] == null) {
-	    	  jetsArray[i] = jet;
-	        added = true;
-	        break;
-	      }
-	    }
-	      return added;
-	    }
 
+	public boolean addJetToArray(Jet jet) {
+		System.out.println("");
+		boolean added = false;
+		for (int i = 0; i < jetsArray.length; i++) {
+			if (jetsArray[i] == null) {
+				jetsArray[i] = jet;
+				added = true;
+				break;
+			}
+		}
+		System.out.println("");
+		return added;
+	}
+
+	public Jet fastestJet() {
+		System.out.println("");
+		Jet fastest = jetsArray[0];
+		for (int i = 0; i < jetsArray.length; i++) {
+			if (jetsArray[i] != null) {
+				if (jetsArray[i].getSpeed() > fastest.getSpeed()) {
+					fastest = jetsArray[i];
+				}
+				
+			}
+		}
+		return fastest;
+//		System.out.println("\nThe fastest jet is goes: " + fastest + " mph.\n");
+	}
+
+	public Jet longestRange() {
+		System.out.println("");
+		Jet longest = jetsArray[0];
+		for (int i = 0; i < jetsArray.length; i++) {
+			if (jetsArray[i] != null) {
+				if (jetsArray[i].getRange() > longest.getRange()) {
+					longest = jetsArray[i];
+				}
+					
+			}
+		}
+		return longest;
+//		System.out.println("\nThe fastest jet is goes: " + fastest + " mph.\n");
+	}
 }
 
+
 /*
+ * public static SpaceCraft farthestCraft() { 
+ * 		SpaceCraft farthest = crafts[0];
+ * 			for (SpaceCraft spaceCraft : crafts) { 
+ * if (spaceCraft != null) { // iterate over spaceship array.
+ * 		if (spaceCraft.range > farthest.range) { 
+ * 			farthest = spaceCraft; // find farthest spaceship to return 
+ * 			} 
+ * 		} 
+ * } 
+ * return farthest; }
  * 
  * public boolean addAnimal(Animal a) { boolean added = false; for (int i = 0; i
  * < animals.length; i++) { if (animals[i] == null) { animals[i] = a; added =
@@ -52,5 +96,18 @@ public class Hangar {
  * public void listAnimals() {
  * System.out.println("== Animals in this sanctuary =="); for (Animal animal :
  * animals) { if (animal != null ) { System.out.println(animal); } } }
+ * 
+ * public void fastestJet() {
+		int fastest = jetsArray[0].getSpeed();
+		for (int i = 0; i < jetsArray.length; i++) {
+			if (jetsArray[i] != null) {
+				if (jetsArray[i].getSpeed() > fastest) {
+					fastest = jetsArray[i].getSpeed();
+				}
+				
+			}
+		}
+		System.out.println("\nThe fastest jet is goes: " + fastest + " mph.\n");
+	}
  * 
  */

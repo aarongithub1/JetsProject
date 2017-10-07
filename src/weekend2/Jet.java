@@ -4,13 +4,13 @@ public class Jet {
 	private String model;
 	private int speed;
 	private int range;
-	private double price;
+	private long price;
 
 	public Jet() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Jet(String model, int speed, int range, double price) {
+	public Jet(String model, int speed, int range, long price) {
 		this.model = model;
 		this.speed = speed;
 		this.range = range;
@@ -29,22 +29,22 @@ public class Jet {
 		return range;
 	}
 
-	public double getPrice() {
+	public long getPrice() {
 		return price;
 	}
 
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Jets [model=");
+		builder.append("(model=");
 		builder.append(model);
 		builder.append(", speed=");
 		builder.append(speed);
 		builder.append(", range=");
 		builder.append(range);
-		builder.append(", price=");
+		builder.append(", price= $");
 		builder.append(price);
-		builder.append("]");
+		builder.append(")");
 		return builder.toString();
 	}
 	
