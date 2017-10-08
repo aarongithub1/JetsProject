@@ -39,7 +39,7 @@ public class Jet {
 		builder.append("(model=");
 		builder.append(model);
 		builder.append(", speed=");
-		builder.append(speed + " mph");
+		builder.append("Mach " + speed / 767.269);
 		builder.append(", range=");
 		builder.append(range + " miles");
 		builder.append(", price= $");
@@ -47,5 +47,5 @@ public class Jet {
 		builder.append(")");
 		return builder.toString();
 	}
-	
+
 }

@@ -19,7 +19,7 @@ public class Hangar {
 
 	public void printAllJets() {
 		System.out.println("");
-		
+
 		for (int i = 0; i < jetsArray.length; i++) {
 			if (jetsArray[i] != null) {
 				System.out.println(jetsArray[i]);
@@ -51,7 +51,7 @@ public class Hangar {
 				if (jetsArray[i].getSpeed() > fastest.getSpeed()) {
 					fastest = jetsArray[i];
 				}
-				
+
 			}
 		}
 		return fastest;
@@ -65,7 +65,7 @@ public class Hangar {
 				if (jetsArray[i].getRange() > longest.getRange()) {
 					longest = jetsArray[i];
 				}
-					
+
 			}
 		}
 		return longest;

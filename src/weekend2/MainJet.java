@@ -6,7 +6,7 @@ public class MainJet {
 	static Scanner kb = new Scanner(System.in);
 	static Hangar h = new Hangar();
 	// static Jet j = new Jet();
-//	private static Jet[] jetsArray;
+	// private static Jet[] jetsArray;
 
 	public static void main(String[] args) {
 		menu();
